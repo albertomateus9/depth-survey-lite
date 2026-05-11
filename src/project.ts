@@ -1,23 +1,21 @@
-export type ProjectType = 'fresnel' | 'ocr' | 'colors' | 'gesture' | 'occupancy' | 'depth' | 'benchmark' | 'telemetry';
-
-export type ProjectConfig = {
-  slug: string;
-  title: string;
-  tagline: string;
-  type: ProjectType;
-  deploy: boolean;
-  topics: string[];
-  description: string;
-  accent: string;
-  secondary: string;
-};
-
+export type ProjectType = 'fresnel' | 'ocr' | 'colors' | 'gesture' | 'occupancy' | 'depth' | 'benchmark' | 'telemetry';
+
+export type ProjectConfig = {
+  slug: string;
+  title: string;
+  tagline: string;
+  type: ProjectType;
+  deploy: boolean;
+  topics: string[];
+  description: string;
+  accent: string;
+  secondary: string;
+};
+
 export const project: ProjectConfig = {
   "slug": "depth-survey-lite",
-  "title": "Depth Survey Lite",
-  "tagline": "Browser-side depth-map survey prototype with heuristic fallback and optional Transformers.js hook.",
-  "type": "depth",
-  "deploy": false,
+  "title": "Survey Leve De Profundidade",
+  "description": "Prototipo browser-side para mapa de profundidade e survey visual com fallback heuristico leve.",
   "topics": [
     "depth-estimation",
     "transformers-js",
@@ -25,9 +23,17 @@ export const project: ProjectConfig = {
     "computer-vision",
     "edge-ai",
     "react",
-    "typescript"
+    "typescript",
+    "profundidade",
+    "visao-computacional",
+    "github-pages",
+    "portugues-brasil",
+    "educacao-tecnologica",
+    "telecomunicacoes"
   ],
-  "description": "Browser-side depth-map survey prototype with heuristic fallback and optional Transformers.js hook.",
+  "deploy": true,
+  "tagline": "Leitura visual de profundidade para corredores, campo e ambientes tecnicos usando inferencia local opcional.",
+  "type": "depth",
   "accent": "#315f72",
   "secondary": "#8e6a35"
-};
+};
